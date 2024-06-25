@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/slides.css">
+    <link rel="icon" type="image/x-icon" href="/imgs/favicon.ico">
+    <title>Clapps</title>
+
+    <!-- <nav class="navbar">
+        <button class="about-me" onclick="document.getElementById('aboutme').scrollIntoView();"> About Me </button>
+
+    </nav> -->
+</head>
+<body> 
+    <div class="landing-card">
+
+        <h1 class="welcome-card" id="typewriter-text">Welcome To My Photography Portfolio!</h1>
+
+        <button class="my-work" id="my-work" >View My Work</button>
+        <section class="c-gradient c-gradient-shift">
+          <div class="c-content-gradient"></div>
+      </section>
+    </div>
+
+    <div class="slideshow-container">
+      <div class="slideshow" id="slideshow">
+          <!-- Slides will be dynamically inserted here -->
+      </div>
+      <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+      <button class="next" onclick="changeSlide(1)">&#10095;</button>
+      <div class="slide-counter" id="slide-counter"></div>
+  </div>
+
+
+    <script src="/js/main.js"></script>
+</body>
+
+
+</html>
