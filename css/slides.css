@@ -1,7 +1,7 @@
 .slideshow-container {
     position: relative;
     max-width: 100%;
-    height: 28%; /* Ensure the container height is fixed */
+    height: 100vh; /* Ensure the container height is fixed */
     margin: auto;
     overflow: hidden;
     background-color: black; /* Optional: Add a background color for better visibility */
@@ -9,6 +9,7 @@
 
 .slideshow {
     display: flex;
+    transition: transform 0.5s ease-in-out;
     height: 100%; /* Ensure the slideshow takes the full height of the container */
 }
 
@@ -38,7 +39,7 @@
     color: white;
     font-weight: bold;
     font-size: 18px;
-    transition: opacity 0.25s ease-in, transform 0.25s ease-in;
+    transition: opacity 0.35s ease-in, transform 0.35s ease-in;
     border-radius: 0 3px 3px 0;
     user-select: none;
     background-color: rgba(0,0,0,0.5); /* Optional: Add background color for better visibility */
