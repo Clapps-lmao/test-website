@@ -7,9 +7,10 @@ document.addEventListener("DOMContentLoaded", function() {
     const text = typewriterElement.textContent;
     // Clear the text content of the element
     typewriterElement.textContent = "";
-    
+
     let index = 0;
-    
+    const startDelay = 3000; // Adjustable delay in milliseconds before the typewriter effect starts
+
     function typeWriter() {
         // Check if the current index is less than the length of the text
         if (index < text.length) {
@@ -21,10 +22,11 @@ document.addEventListener("DOMContentLoaded", function() {
             setTimeout(typeWriter, 90); // Adjust the delay (in milliseconds) as needed
         }
     }
-    
-    // Start the typewriter effect
-    typeWriter();
+
+    // Start the typewriter effect after the adjustable delay
+    setTimeout(typeWriter, startDelay);
 });
+
 
 
 // slideshow.js
@@ -83,3 +85,51 @@ appointmenbuttonlearnmore.addEventListener('click', () => {
         appointmentFullElement.scrollIntoView({ behavior: 'smooth' });
     }
 });
+
+//hovereffect.js
+
+document.addEventListener("DOMContentLoaded", function() {
+    const myWorkButton = document.querySelector('.my-work');
+    const landingCard = document.querySelector('.landing-card');
+
+    myWorkButton.addEventListener('mouseenter', function() {
+        landingCard.classList.add('animate');
+    });
+
+    myWorkButton.addEventListener('mouseleave', function() {
+        landingCard.classList.remove('animate');
+    });
+});
+
+
+//serviceworker.js
+// WORk IN PROGRESS
+// const CACHE_NAME = 'offline-cache';
+// const OFFLINE_URL = 'no-connection.html';
+
+// self.addEventListener('install', (event) => {
+//     event.waitUntil(
+//         caches.open(CACHE_NAME).then((cache) => {
+//             return cache.addAll([
+//                 OFFLINE_URL,
+//                 // Add other assets you want to cache here
+//             ]);
+//         })
+//     );
+// });
+
+// self.addEventListener('activate', (event) => {
+//     event.waitUntil(self.clients.claim());
+// });
+
+// self.addEventListener('fetch', (event) => {
+//     if (event.request.mode === 'navigate') {
+//         event.respondWith(
+//             fetch(event.request).catch(() => {
+//                 return caches.open(CACHE_NAME).then((cache) => {
+//                     return cache.match(OFFLINE_URL);
+//                 });
+//             })
+//         );
+//     }
+// });

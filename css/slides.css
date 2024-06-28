@@ -42,9 +42,10 @@
     transition: opacity 0.35s ease-in, transform 0.35s ease-in;
     border-radius: 0 3px 3px 0;
     user-select: none;
-    background-color: rgba(0,0,0,0.5); /* Optional: Add background color for better visibility */
+    border: none;
+    background-color: transparent;
     opacity: 0; /* Start with buttons hidden */
-    transform: scale(0.9); /* Start with buttons slightly smaller */
+    transform: scale(1.9); /* Start with buttons slightly smaller */
 }
 
 .next {
@@ -55,11 +56,7 @@
 .slideshow-container:hover .prev,
 .slideshow-container:hover .next {
     opacity: 1; /* Show buttons on hover */
-    transform: scale(1); /* Scale buttons to normal size on hover */
-}
-
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+    transform: scale(2); /* Scale buttons to normal size on hover */
 }
 
 .slide-counter {
@@ -68,7 +65,7 @@
     left: 50%;
     transform: translateX(-50%);
     color: white;
-    font-size: 18px;
+    font-size: 1rem;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 5px 10px;
     border-radius: 5px;

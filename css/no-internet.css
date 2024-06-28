@@ -1,0 +1,51 @@
+:root {
+    color-scheme: dark;
+}
+
+.gg-laptop {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 65px!important;
+    height: 40px;
+    border: 2px solid;
+    border-radius: 2px
+}
+.gg-laptop::after {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 70px;
+    height: 3px;
+    background: currentColor;
+    left: -4px;
+    bottom: -7px;
+    border-radius: 100px;
+}
+
+.laptop-div {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    right: 0;
+    height: 20vh;
+    width: 35vw;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+}
+
+.no-connection-text {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+    font-family: sans-serif;
+    text-align: center;
+    margin: 40px auto;
+}

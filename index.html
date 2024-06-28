@@ -8,6 +8,19 @@
     <link rel="icon" type="image/x-icon" href="imgs/favicon.ico">
     <title>Clapps</title>
 
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script>
+   $(window).load(function() {
+   $(".preloader").delay(3000).fadeOut("slow");
+   })
+</script>
+
+    <div class="preloader">
+      <div class="spinner"></div>
+      <div class="loading-message" id="loading-message">This is taking longer than expected, try reloading</div>
+    </div>
+
     <!-- <nav class="navbar">
         <button class="about-me" onclick="document.getElementById('aboutme').scrollIntoView();"> About Me </button>
 
@@ -19,9 +32,6 @@
         <h1 class="welcome-card" id="typewriter-text">Welcome To My Photography Portfolio!</h1>
 
         <button class="my-work" id="my-work" >View My Work</button>
-        <section class="c-gradient c-gradient-shift">
-          <div class="c-content-gradient"></div>
-      </section>
     </div>
 
     <div class="slideshow-container">
@@ -32,10 +42,7 @@
       <button class="next" onclick="changeSlide(1)">&#10095;</button>
       <div class="slide-counter" id="slide-counter"></div>
   </div>
-
-
-    <script src="js/main.js"></script>
 </body>
-
+<script src="js/main.js"></script>
 
 </html>
