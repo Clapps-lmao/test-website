@@ -1,0 +1,72 @@
+<!--WORK IN PROGRESS-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No-Internet</title>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/laptop.css' rel='stylesheet'>
+</head>
+<style>
+    :root {
+    color-scheme: dark;
+}
+
+
+.wifi {
+	padding: 20px;
+}
+
+.wifi, .wifi:before {
+	display: inline-block;
+	border: 30px double transparent;
+	border-top-color: currentColor;
+	border-radius: 50%;
+}
+
+.wifi:before {
+	content: '';
+	width: 0; height: 0;
+}
+
+
+.laptop-div {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    right: 0;
+    height: 20vh;
+    width: 35vw;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+}
+
+.no-connection-text {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+    font-family: sans-serif;
+    text-align: center;
+    margin: 40px auto;
+}
+</style>
+<body>
+<div class="laptop-div">
+
+    <div class="wifi"></div>
+
+
+    
+
+</div>
+
+<h1 class="no-connection-text">There is no internet connection.</h1>
+
+</body>
+</html>
