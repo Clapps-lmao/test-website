@@ -4,6 +4,7 @@
 :root {
     color-scheme: dark;
     user-select: none;
+    overflow-y: hidden;
 }
 
 html {
